@@ -57,6 +57,18 @@
     </style>
 
 
+    <!-- Botão com borda  -->
+    <style name="ButtonBorder">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">70dp</item>
+        <item name="android:layout_marginRight">70dp</item>
+        <item name="android:layout_marginTop">70dp</item>
+        <item name="android:background">@drawable/button_border</item>
+    </style>
+
+
+
     <!-- VIEW DO CAD -->
     <style name="CadastroView">
         <item name="android:layout_height">match_parent</item>

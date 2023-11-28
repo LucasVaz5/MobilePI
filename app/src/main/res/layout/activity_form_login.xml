@@ -84,20 +84,21 @@
             android:visibility="invisible"
 
             />
-    
-        <TextView
-            android:id="@+id/text_tela_cadastro"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/text_cadastro"
-            app:layout_constraintTop_toBottomOf="@id/progressbar"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="30dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:textColor="@color/blue"
-            />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/ButtonBorder"
+        android:layout_width="241dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_cadastro"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressbar" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
