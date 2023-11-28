@@ -8,6 +8,15 @@
         <item name="android:layout_margin">20dp</item>
     </style>
 
+    <!-- VIEW DO CAD -->
+    <style name="ContainerComponentsCad">
+        <item name="android:layout_width"> match_parent</item>
+        <item name="android:layout_height">250dp </item>
+        <item name="android:background">@drawable/container_cad</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+
 <style name="Edit_Text">
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_width">wrap_content</item>
@@ -47,5 +56,18 @@
         <item name="android:background">@drawable/button</item>
     </style>
 
+
+    <!-- VIEW DO CAD -->
+    <style name="CadastroView">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="layout_goneMarginLeft">40dp</item>
+        <item name="layout_goneMarginRight">40dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:maxLength">25</item>
+    </style>
 
 </resources>

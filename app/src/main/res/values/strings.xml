@@ -2,5 +2,7 @@
     <string name="app_name">Projeto I</string>
     <string name="entrar">Entrar</string>
     <string name="text_cadastro">CRIE UMA CONTA</string>
+    <string name="title_cadastro">Crie uma conta</string>
+    <string name="salvar">Cadastrar e Continuar</string>
 
 </resources>
