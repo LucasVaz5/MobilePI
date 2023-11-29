@@ -10,7 +10,7 @@ public class Conexao  extends SQLiteOpenHelper {
 
     private static final String name ="D2W.bd";
 
-    private static final int version = 1;
+    private static final int version = 3;
 
     public Conexao(@Nullable Context context) {
         super(context, name, null, version);
@@ -29,7 +29,7 @@ public class Conexao  extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+    public void onUpgrade(SQLiteDatabase db, int i, int i1) {
 
     }
 }
