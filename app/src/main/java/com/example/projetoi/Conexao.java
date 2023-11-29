@@ -1,5 +1,6 @@
 package com.example.projetoi;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -23,13 +24,19 @@ public class Conexao  extends SQLiteOpenHelper {
                 "NOME varchar (30), " +
                 "EMAIL varchar (50), " +
                 "SENHA varchar(50))");
-
-
-
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL("drop table if exists USERS" );
     }
+
+    /*
+    * public Boolean insertData (String NOME, String SENHA){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("NOME", NOME);
+        contentValues.put("SENHA", SENHA);
+
+    * */
 }

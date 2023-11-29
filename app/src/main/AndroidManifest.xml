@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetoI"
         tools:targetApi="31">
-
+        <activity
+            android:name=".form_planos"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -22,11 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".FormLogin"  android:screenOrientation="portrait" />
-
+        <activity
+            android:name=".FormLogin"
+            android:screenOrientation="portrait" />
         <activity android:name=".FormCadastro" />
-
     </application>
 
 </manifest>

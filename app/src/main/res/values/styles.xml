@@ -82,4 +82,16 @@
         <item name="android:maxLength">25</item>
     </style>
 
+
+
+    <!---    VIEW DOS PLANOS     -->
+
+    <style name="PlanosView">
+        <item name="android:layout_width"> match_parent</item>
+        <item name="android:layout_height">140dp </item>
+        <item name="android:background">@drawable/container_planos</item>
+        <item name="android:layout_margin">20dp</item>
+    </style>
+
+
 </resources>
