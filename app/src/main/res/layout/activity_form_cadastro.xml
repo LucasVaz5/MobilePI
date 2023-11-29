@@ -9,76 +9,95 @@
 
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barra"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Toolbar
-            android:id="@+id/toolbar"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_toolbar_gradient"
-            android:title="Crie uma conta"
-            android:titleTextColor="@color/black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/back"
-                android:layout_width="wrap_content"
+            <Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="01dp"
-                android:src="@drawable/ic_arrow_back"
-                app:layout_constraintBottom_toBottomOf="@id/toolbar"
-                app:layout_constraintEnd_toEndOf="@id/toolbar"
-                app:layout_constraintStart_toStartOf="@id/toolbar"
-                app:layout_constraintTop_toTopOf="@+id/toolbar" />
+                android:background="@drawable/bg_toolbar_gradient"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-        </Toolbar>
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="01dp"
+                    android:src="@drawable/ic_arrow_back"
+                    app:layout_constraintBottom_toBottomOf="@id/toolbar"
+                    app:layout_constraintEnd_toEndOf="@id/toolbar"
+                    app:layout_constraintStart_toStartOf="@id/toolbar"
+                    app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+                <TextView
+                    android:id="@+id/titulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crie uma conta"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </Toolbar>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
     </com.google.android.material.appbar.AppBarLayout>
-    <!-- VIEW DO NOME-->
-    <TextView
-        android:id="@+id/title_cadastrese"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:textColor="@color/black"
-        android:textSize="50dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- VIEW DO EMAIL -->
 
     <View
         android:id="@+id/containerComponents"
         style="@style/ContainerComponentsCad"
-        android:layout_width="347dp"
-        android:layout_height="153dp"
+        android:layout_width="333dp"
+        android:layout_height="214dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title_cadastrese" />
+        app:layout_constraintTop_toBottomOf="@id/barra" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="125dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="112dp"
+        android:text="  Sobrenome"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toTopOf="@id/containerComponents" />
 
     <EditText
+
         android:id="@+id/edit_nome"
         style="@style/CadastroView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:hint="Nome"
         android:minHeight="48dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@id/containerComponents"
         app:layout_constraintTop_toTopOf="@id/containerComponents" />
 
@@ -87,49 +106,76 @@
         style="@style/CadastroView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:hint="Sobre nome"
+        android:layout_marginTop="100dp"
+        android:hint="Sobrenome"
+        android:textColor="@color/black"
         android:minHeight="48dp"
         app:layout_constraintStart_toEndOf="@id/containerComponents"
         app:layout_constraintTop_toTopOf="@id/edit_nome" />
-    <!-- VIEW DO EMAIL -->
+
 
     <View
         android:id="@+id/containerComponents_email"
         style="@style/ContainerComponentsCad"
-        android:layout_width="353dp"
-        android:layout_height="200dp"
+        android:layout_width="345dp"
+        android:layout_height="279dp"
         android:layout_marginTop="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.393"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/containerComponents"
-        app:layout_constraintVertical_bias="0.138" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="94dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="144dp"
+        android:text="  Senha"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents_email"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents_email"
+        app:layout_constraintTop_toTopOf="@id/containerComponents_email" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="94dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:text="  Email"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents_email"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents_email"
+        app:layout_constraintTop_toTopOf="@id/containerComponents_email" />
 
     <EditText
         android:id="@+id/edit_email"
         style="@style/CadastroView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="64dp"
         android:hint="Email"
+        android:textColor="@color/black"
         android:minHeight="48dp"
         app:layout_constraintStart_toEndOf="@id/containerComponents_email"
         app:layout_constraintTop_toTopOf="@id/containerComponents_email" />
 
-
     <EditText
         android:id="@+id/edit_senha"
+        android:textColor="@color/black"
         style="@style/CadastroView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="112dp"
         android:hint="Senha"
         android:minHeight="48dp"
         app:layout_constraintStart_toEndOf="@id/containerComponents_email"
         app:layout_constraintTop_toTopOf="@id/edit_email" />
-
-
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
@@ -138,6 +184,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         style="@style/Button"
+        android:layout_marginTop="68dp"
         android:text="@string/salvar"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -150,8 +197,23 @@
         android:layout_height="52dp"
         android:text="Mostrar Senha"
         android:textSize="18dp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/containerComponents_email"
         app:layout_constraintEnd_toEndOf="@+id/containerComponents_email"
         app:layout_constraintStart_toStartOf="@+id/containerComponents_email"
         app:layout_constraintTop_toBottomOf="@+id/edit_senha" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="94dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="  Nome"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toTopOf="@id/containerComponents" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

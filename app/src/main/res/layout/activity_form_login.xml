@@ -43,6 +43,7 @@
             android:hint="Email"
             android:drawableRight="@drawable/ic_email"
             android:inputType="textEmailAddress"
+            android:textColor="@color/black"
 
         />
 
@@ -56,6 +57,7 @@
         android:drawableRight="@drawable/ic_eye"
         app:layout_constraintTop_toBottomOf="@+id/edit_email"
         android:inputType="numberPassword"
+        android:textColor="@color/black"
         />
 
 
