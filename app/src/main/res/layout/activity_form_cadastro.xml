@@ -173,6 +173,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
         android:hint="Senha"
+        android:inputType="numberPassword"
         android:minHeight="48dp"
         app:layout_constraintStart_toEndOf="@id/containerComponents_email"
         app:layout_constraintTop_toTopOf="@id/edit_email" />
@@ -183,13 +184,16 @@
         android:layout_height="wrap_content" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_salvar"
         style="@style/Button"
         android:layout_marginTop="68dp"
+        android:onClick="salvar"
         android:text="@string/salvar"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/containerComponents_email"
-        app:layout_constraintTop_toBottomOf="@+id/containerComponents_email" />
+        app:layout_constraintTop_toBottomOf="@+id/containerComponents_email"
+        tools:ignore="OnClick" />
 
     <Switch
         android:id="@+id/switch1"
