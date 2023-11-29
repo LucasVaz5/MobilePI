@@ -30,6 +30,6 @@ public class Conexao  extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-
+        db.execSQL("drop table if exists USERS" );
     }
 }
