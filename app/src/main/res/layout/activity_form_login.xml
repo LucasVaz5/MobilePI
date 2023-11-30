@@ -65,7 +65,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/text_tela_cadastro"
+        android:id="@+id/bt_entrar"
         style="@style/Button"
         android:layout_marginTop="28dp"
         android:text="@string/entrar"

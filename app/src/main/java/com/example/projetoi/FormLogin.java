@@ -18,11 +18,16 @@ public class FormLogin extends AppCompatActivity {
         setContentView(R.layout.activity_form_login);
 
         AppCompatButton btn = findViewById(R.id.bt_criar_conta);
+        AppCompatButton entrar = findViewById(R.id.bt_entrar);
+
+
 
         btn.setOnClickListener(view -> {
             startActivity(new Intent(FormLogin.this, FormCadastro.class));
         });
-
+        entrar.setOnClickListener(view -> {
+            startActivity(new Intent(FormLogin.this, form_planos.class));
+        });
     }
 }
 

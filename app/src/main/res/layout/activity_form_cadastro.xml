@@ -97,6 +97,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:hint="Nome"
+        android:inputType="text"
         android:minHeight="48dp"
         android:maxLength="25"
         android:textColor="@color/black"
@@ -106,6 +107,7 @@
     <EditText
         android:id="@+id/edit_sbnome"
         style="@style/CadastroView"
+        android:inputType="text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -163,6 +165,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:hint="Email"
+        android:inputType="textEmailAddress"
         android:maxLength="25"
         android:textColor="@color/black"
         android:minHeight="48dp"

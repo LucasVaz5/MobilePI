@@ -12,13 +12,46 @@
 
         android:id="@+id/containerPlanos"
         style="@style/PlanosView"
+        android:layout_width="372dp"
+        android:layout_height="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-         />
+        app:layout_constraintVertical_bias="0.018" />
+
+    <ImageView
+        android:id="@+id/Premiun"
+        android:layout_width="215dp"
+        android:layout_height="66dp"
+        android:src="@drawable/plano_premiun"
+        app:layout_constraintBottom_toBottomOf="@+id/containerPlanos"
+        app:layout_constraintEnd_toEndOf="@id/containerPlanos"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="@id/containerPlanos"
+        app:layout_constraintTop_toTopOf="@id/containerPlanos"
+        app:layout_constraintVertical_bias="0.634" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ver_modelosP"
+        style="@style/Button_Premiun"
+        android:layout_width="126dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/Premiun"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/Premiun"
+        app:layout_constraintTop_toTopOf="@id/containerPlanos"
+        tools:ignore="TouchTargetSizeCheck" />
 
     />
 
+    />
 
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>
