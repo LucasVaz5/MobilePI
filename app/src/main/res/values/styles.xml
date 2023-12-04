@@ -66,6 +66,18 @@
 
     </style>
 
+
+    <style name="Button_C">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:background">@drawable/button_compl</item>
+
+    </style>
+
+
     <!-- Botão com borda  -->
     <style name="ButtonBorder">
         <item name="android:layout_width">match_parent</item>
@@ -103,4 +115,14 @@
     </style>
 
 
+    <style name="plano_compl">
+        <item name="android:textSize">21dp</item>
+        <item name="android:textColor">#28BA62</item>
+    </style>
+
+
+    <style name="r_149_90_me">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#28BA62</item>
+    </style>
 </resources>

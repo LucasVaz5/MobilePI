@@ -4,6 +4,8 @@
     <string name="text_cadastro">CRIAR UMA NOVA CONTA</string>
     <string name="title_cadastro">Crie uma conta</string>
     <string name="salvar">Cadastrar e Continuar</string>
-    <string name="Premiun">Ver Modelos</string>
+    <string name="Premiun">Ver Modelos</string>]
+    <string name="plano_compl">Plano COMPLETO</string>
+    <string name="r_149_90_me">R$ 149,90 mensais</string>
 
 </resources>
