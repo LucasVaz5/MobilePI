@@ -14,7 +14,10 @@
         tools:targetApi="31">
         <activity
             android:name=".form_planos"
-            android:exported="false" />
+            android:exported="true" />
+        <activity
+            android:name=".Conta"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -27,7 +30,7 @@
         <activity
             android:name=".FormLogin"
             android:screenOrientation="portrait" />
-        <activity android:name=".FormCadastro" />
+
     </application>
 
 </manifest>

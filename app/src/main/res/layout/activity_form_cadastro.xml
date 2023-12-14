@@ -62,7 +62,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!-- VIEW DO EMAIL -->
+    <!-- VIEW DO NOME -->
 
     <View
         android:id="@+id/containerComponents"
@@ -88,6 +88,20 @@
 
         app:layout_constraintStart_toStartOf="@+id/containerComponents"
         app:layout_constraintTop_toTopOf="@id/containerComponents" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="94dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="  Nome"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toTopOf="@id/containerComponents" />
+
 
     <EditText
 
@@ -119,11 +133,13 @@
         app:layout_constraintTop_toTopOf="@id/edit_nome" />
 
 
+
+
     <View
         android:id="@+id/containerComponents_email"
         style="@style/ContainerComponentsCad"
-        android:layout_width="345dp"
-        android:layout_height="279dp"
+        android:layout_width="342dp"
+        android:layout_height="259dp"
         android:layout_marginTop="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -203,29 +219,7 @@
         app:layout_constraintTop_toBottomOf="@+id/containerComponents_email"
         tools:ignore="OnClick" />
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="175dp"
-        android:layout_height="52dp"
-        android:text="Mostrar Senha"
-        android:textSize="18dp"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/containerComponents_email"
-        app:layout_constraintEnd_toEndOf="@+id/containerComponents_email"
-        app:layout_constraintStart_toStartOf="@+id/containerComponents_email"
-        app:layout_constraintTop_toBottomOf="@+id/edit_senha" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="94dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="8dp"
-        android:text="  Nome"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@id/containerComponents"
-        app:layout_constraintHorizontal_bias="0.037"
-        app:layout_constraintStart_toStartOf="@+id/containerComponents"
-        app:layout_constraintTop_toTopOf="@id/containerComponents" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

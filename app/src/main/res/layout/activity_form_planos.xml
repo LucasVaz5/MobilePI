@@ -9,7 +9,60 @@
     tools:context=".form_planos"
     tools:ignore="ExtraText">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_toolbar_gradient"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/voltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="01dp"
+                android:src="@drawable/ic_arrow_back"
+                app:layout_constraintBottom_toBottomOf="@id/toolbar"
+                app:layout_constraintEnd_toEndOf="@id/toolbar"
+                app:layout_constraintStart_toStartOf="@id/toolbar"
+                app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Planos                                 "
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="206dp"
+                android:layout_marginStart="01dp"
+                android:src="@drawable/baseline_account_circle_24" />
+
+        </Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <!-- <ScrollView
         android:layout_width="match_parent"
@@ -22,14 +75,14 @@
 
         android:id="@+id/containerPlanos"
         style="@style/PlanosView"
-        android:layout_width="357dp"
-        android:layout_height="86dp"
+        android:layout_width="369dp"
+        android:layout_height="81dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintHorizontal_bias="0.813"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.018" />
+        app:layout_constraintVertical_bias="0.078" />
 
     <ImageView
         android:id="@+id/Premiun"
@@ -87,6 +140,12 @@
 
 
 
+
+
+
+
+
+
     ]]>
 
     <ImageView
@@ -94,37 +153,37 @@
         android:layout_width="185dp"
         android:layout_height="177dp"
         android:src="@drawable/quadro2"
-        app:circularflow_defaultRadius="10dp"
+        app:circularflow_defaultRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toEndOf="@+id/rectangle_4"
         app:layout_constraintTop_toBottomOf="@+id/containerPlanos"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintVertical_bias="0.05" />
 
     <ImageView
         android:id="@+id/rectangle_4"
         android:layout_width="176dp"
         android:layout_height="177dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="36dp"
         android:contentDescription="rectangle_4"
         android:src="@drawable/quadro1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/containerPlanos"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintVertical_bias="0.036" />
 
     <View
         android:id="@+id/rectangle_1"
-        android:layout_width="353dp"
-        android:layout_height="76dp"
+        android:layout_width="364dp"
+        android:layout_height="74dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="360dp"
+        android:layout_marginBottom="252dp"
         android:background="@drawable/rectangle_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.644"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -180,14 +239,13 @@
         android:id="@+id/rectangle7"
         android:layout_width="176dp"
         android:layout_height="177dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginStart="44dp"
         android:contentDescription="rectangle_4"
         android:src="@drawable/quadro3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rectangle_1"
-        app:layout_constraintVertical_bias="0.302" />
+        app:layout_constraintVertical_bias="0.354" />
 
     <ImageView
         android:id="@+id/rectangle6"
@@ -199,7 +257,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rectangle_1"
-        app:layout_constraintVertical_bias="0.185"
+        app:layout_constraintVertical_bias="0.351"
         tools:ignore="DuplicateIds,MissingConstraints" />
 
 

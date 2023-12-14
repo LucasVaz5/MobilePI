@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_toolbar_gradient"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="01dp"
+                android:src="@drawable/ic_arrow_back"
+                app:layout_constraintBottom_toBottomOf="@id/toolbar"
+                app:layout_constraintEnd_toEndOf="@id/toolbar"
+                app:layout_constraintStart_toStartOf="@id/toolbar"
+                app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conta"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:id="@+id/containerComponents"
+        style="@style/ContainerComponentsCad"
+        android:layout_width="374dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barra" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="252dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="56dp"
+        android:text="  Trocar Senha"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="83dp" />
+
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_lock"
+        app:layout_constraintBottom_toBottomOf="@+id/containerComponents"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/ir"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_arrow_front"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="341dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <TextView
+        android:id="@+id/Version"
+        android:layout_width="166dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="56dp"
+        android:text="  Versão"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <ImageView
+        android:id="@+id/Version_im"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_version"
+        app:layout_constraintBottom_toBottomOf="@+id/containerComponents"
+        app:layout_constraintEnd_toStartOf="@+id/Version"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toTopOf="@+id/Version"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="166dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="56dp"
+        android:text=" Não é você?"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="183dp" />
+
+    <ImageView
+        android:id="@+id/count_imh"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:src="@drawable/baseline_account_circle_24"
+        app:layout_constraintBottom_toBottomOf="@+id/containerComponents"
+        app:layout_constraintEnd_toStartOf="@+id/count"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toTopOf="@+id/count"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sair"
+        style="@style/Button"
+        android:layout_width="107dp"
+        android:layout_height="48dp"
+        android:onClick="salvar"
+        android:text="@string/sair"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints,OnClick"
+        tools:layout_editor_absoluteX="262dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
